@@ -12,7 +12,7 @@ public class Main {
         URL url = null;
         HttpURLConnection connection = null;
         int responseCode = 0;
-        String urlString = "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true&hourly=temperature_2m,relativehumidity_2m,windspeed_10m";
+        String urlString = "https://api.chucknorris.io/jokes/random";
 
 
         try {
@@ -41,7 +41,7 @@ public class Main {
             in.close();
 
             JSONObject jsonAPIResponse = new JSONObject(apiData.toString());
-            System.out.println(jsonAPIResponse.get("latitude"));
+            //System.out.println(jsonAPIResponse.get("latitude"));
 
             System.out.println(jsonAPIResponse.toString());
         } else {
