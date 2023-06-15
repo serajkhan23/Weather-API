@@ -1,1 +1,1 @@
-this is weather API
+this is API call using java
